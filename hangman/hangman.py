@@ -55,7 +55,7 @@ while guess_word != secret_word and bad_tries < 7:
             if bad_tries == 7:
                 print("Perdeste o jogo. A palavra era " + secret_word)
             else:
-                print("Nao ha essa letra na palavra. Tenta outra vez.") 
+                print("Nao ha essa letra na palavra.Restam " + str((7-bad_tries)) + " Tenta outra vez.") 
                 guess_letter = input("Letra: ")
     else:
         guess_letter = input("Introduz apenas uma letra: ")
